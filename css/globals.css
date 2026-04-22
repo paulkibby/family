@@ -103,6 +103,10 @@ main {
   flex-direction: column;
 }
 
+.pop {
+  transform: scale(1.06);
+}
+
 .scoreboard-info {
   text-align: center;
 }
@@ -110,6 +114,7 @@ main {
 .scoreboard-num {
   font-size: 240px;
   font-weight: 400;
+  transition: transform 0.06s cubic-bezier(.17,.67,.83,.67);
 }
 
 .scoreboard-name {

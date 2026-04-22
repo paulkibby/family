@@ -52,18 +52,11 @@
       const el = document.getElementById('score' + player);
       el.textContent = newVal;
 
-      // Pop animation
+
       el.classList.remove('pop');
       void el.offsetWidth;
       if (delta > 0) el.classList.add('pop');
       setTimeout(() => el.classList.remove('pop'), 150);
-
-      // Flash panel
-      const panel = document.getElementById('p' + player);
-      if (delta > 0) {
-        panel.classList.add('flash');
-        setTimeout(() => panel.classList.remove('flash'), 200);
-      }
     }
   </script>
 </body>
