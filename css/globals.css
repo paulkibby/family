@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  padding: 36px;
+}
+
+.layer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 80px;
+  background-color: #000000;
+  border-radius: 36px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.scoreboard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  flex: 1;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.scoreboard-info {
+  text-align: center;
+}
+
+.scoreboard-num {
+  font-size: 240px;
+  font-weight: 400;
+}
+
+.scoreboard-name {
+  font-size: 32px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, .5);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  margin-top: 100px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  padding: 0;
+  background-color: rgba(255, 255, 255, .12);
+  border: none;
+  border-radius: 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color .15s ease, opacity .15s ease;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, .18);
+}
+
+.button:active {
+  opacity: .75;
+}
+
+.button svg {
+  opacity: .5;
+  transition: opacity .15s ease;
+}
+
+.button:hover svg {
+  opacity: 1;
+}
+
+.vs {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vs-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  color: rgba(255, 255, 255, .65);
+  font-size: 32px;
+}
+
+.vs-line-top {
+  flex: 1;
+  width: 1px;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, .25));
+}
+
+.vs-line-bottom {
+  flex: 1;
+  width: 1px;
+  background: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 1));
+}
