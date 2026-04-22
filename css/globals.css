@@ -82,10 +82,19 @@ main {
 }
 
 .title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
   font-family: "Montserrat", sans-serif;
   font-size: 64px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.title svg {
+  width: 54px;
+  height: 54px;
+  color: #f43f5e;
 }
 
 .scoreboard {
