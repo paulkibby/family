@@ -92,9 +92,13 @@ main {
 }
 
 .title svg {
-  width: 54px;
-  height: 54px;
+  width: 50px;
+  height: 50px;
   color: #f43f5e;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-name: heart;
 }
 
 .scoreboard {
@@ -199,4 +203,16 @@ main {
   flex: 1;
   width: 1px;
   background: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 1));
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(1);
+}
+90% {
+    transform: scale(1.17);
+}
+100% {
+    transform: scale(1);
+}
 }
